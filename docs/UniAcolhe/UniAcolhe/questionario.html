@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação | UniAcolhe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="soft-bg">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>Uni<span>Acolhe</span></span></a><nav><a href="index.html">Início</a><a href="questionario.html" class="active">Avaliação</a><a href="recursos.html">Recursos</a><a href="sobre.html">Sobre</a></nav><a class="nav-cta" href="index.html">Sair</a></header>
+
+<main class="assessment-wrap">
+  <div class="assessment-head">
+    <div><span class="eyebrow">Avaliação inicial</span><h1>O que pode ser mais difícil para você?</h1><p>Selecione todas as situações que fizerem sentido. Não existe resposta certa ou errada.</p></div>
+    <div class="step-pill"><span id="selectedCount">0</span> selecionadas</div>
+  </div>
+
+  <div class="privacy-note"><span>🔒</span><div><strong>Sem cadastro</strong><p>Suas escolhas ficam apenas nesta sessão do navegador e são usadas para montar suas sugestões.</p></div></div>
+
+  <form id="assessmentForm">
+    <section class="question-group"><div class="group-title"><span class="group-icon">◈</span><div><h2>Estudos e organização</h2><p>Rotina, foco e gerenciamento das atividades.</p></div></div><div class="option-grid">
+      <label class="option"><input type="checkbox" name="difficulty" value="concentracao"><span class="check"></span><div><b>Manter a concentração</b><small>Focar em aulas, leituras ou estudos.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="organizacao"><span class="check"></span><div><b>Organizar tarefas</b><small>Planejar trabalhos, provas e atividades.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="tempo"><span class="check"></span><div><b>Gerenciar o tempo</b><small>Calcular prazos e distribuir o tempo.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="leitura"><span class="check"></span><div><b>Leitura e interpretação</b><small>Compreender textos e instruções extensas.</small></div></label>
+    </div></section>
+
+    <section class="question-group"><div class="group-title"><span class="group-icon">◌</span><div><h2>Ambiente e estímulos</h2><p>Situações relacionadas ao espaço físico.</p></div></div><div class="option-grid">
+      <label class="option"><input type="checkbox" name="difficulty" value="sons"><span class="check"></span><div><b>Sensibilidade a sons</b><small>Ruídos, conversas ou ambientes movimentados.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="luzes"><span class="check"></span><div><b>Sensibilidade a luzes</b><small>Luminosidade ou estímulos visuais.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="movimento"><span class="check"></span><div><b>Ambientes muito movimentados</b><small>Grande fluxo de pessoas ou mudanças.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="mudancas"><span class="check"></span><div><b>Mudanças de rotina</b><small>Lidar com alterações inesperadas.</small></div></label>
+    </div></section>
+
+    <section class="question-group"><div class="group-title"><span class="group-icon">◎</span><div><h2>Comunicação e convivência</h2><p>Interações com professores, colegas e grupos.</p></div></div><div class="option-grid">
+      <label class="option"><input type="checkbox" name="difficulty" value="professores"><span class="check"></span><div><b>Falar com professores</b><small>Fazer perguntas ou pedir orientação.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="grupos"><span class="check"></span><div><b>Trabalhos em grupo</b><small>Dividir tarefas e participar das atividades.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="socializacao"><span class="check"></span><div><b>Socialização</b><small>Interagir com colegas e conhecer pessoas.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="apresentacao"><span class="check"></span><div><b>Apresentações</b><small>Falar em público ou apresentar trabalhos.</small></div></label>
+    </div></section>
+
+    <section class="question-group"><div class="group-title"><span class="group-icon">◇</span><div><h2>Avaliações e rotina acadêmica</h2><p>Situações que podem aparecer durante o semestre.</p></div></div><div class="option-grid">
+      <label class="option"><input type="checkbox" name="difficulty" value="provas"><span class="check"></span><div><b>Realizar provas</b><small>Organizar-se ou manter a atenção durante avaliações.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="pressao"><span class="check"></span><div><b>Pressão e ansiedade acadêmica</b><small>Lidar com cobrança, prazos ou avaliações.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="rotina"><span class="check"></span><div><b>Adaptar-se à rotina universitária</b><small>Horários, deslocamento e novas responsabilidades.</small></div></label>
+      <label class="option"><input type="checkbox" name="difficulty" value="pedirajuda"><span class="check"></span><div><b>Pedir ajuda</b><small>Saber a quem recorrer quando surge uma dificuldade.</small></div></label>
+    </div></section>
+
+    <section class="question-group other-group"><div class="group-title"><span class="group-icon">＋</span><div><h2>Quer contar outra situação?</h2><p>Opcional. Isso não será usado para diagnóstico.</p></div></div><textarea id="other" placeholder="Escreva aqui, se quiser..."></textarea></section>
+
+    <div class="form-footer"><p><strong>Você está no controle.</strong><br>As sugestões são orientações gerais e não substituem avaliação profissional ou os procedimentos oficiais da universidade.</p><button class="btn btn-primary" type="submit">Ver minhas sugestões <span>→</span></button></div>
+  </form>
+</main>
+<script src="js/questionario.js"></script>
+</body>
+</html>
